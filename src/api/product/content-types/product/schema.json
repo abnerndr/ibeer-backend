@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price_in_cents": {
+      "type": "float"
+    },
+    "discount": {
+      "type": "float"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "company_id": {
+      "type": "uid"
+    },
+    "photo_url": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
